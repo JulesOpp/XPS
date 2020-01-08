@@ -1,0 +1,420 @@
+
+
+------------------------------------------------------------------------------- 
+                            ORCA-MATRIX DRIVEN AUTOCI                          
+------------------------------------------------------------------------------- 
+
+
+----------------------------- Technical Information ---------------------------
+Print Level                                ... 4
+Maximum memory                             ... 1024 MB
+Keep MO Integrals                          ... 0
+Use MO Integrals from disk                 ... 0
+Number of parallel MPI processes           ... 1
+MO Integrals transformation type           ... 0 (Full Canonical)
+Use general autoci evaluation module       ... 0
+
+------------------------------- Wavefunction Type -----------------------------
+Correlation treatment                      ...   IP-ROCIS
+Frozen core treatment type                     ...    0 
+Reference Wavefunction:                    ...        RHF
+  Number of active electrons               ...   -1
+  Number of active orbitals                ...   -1
+  Internal orbitals:      0 ...   14
+  Virtual  orbitals:     15 ...   45
+Excitation classes included: IP_I IP_IJA 
+
+----------------------------- Converger Information ---------------------------
+Maximum number of iterations               ...        50
+Maximum depth of DIIS extrapolation        ...         5
+Convergence tolerance (max. residuum)      ... 1.000e-06
+Level shift for amplitude update           ... 2.000e-01
+Denominator for amplitude update           ... Orbital Energies
+Number of multiplicity blocks              ...    1
+   ... BLOCK  0: Mult =  1 Roots =  1 
+   ... Number of states to solve           ...    1
+
+---------------------------------- Properties ---------------------------------
+1-body density matrix                      ... true
+Memory used before INT TRAFO: 4 MB
+--------------- Full MO transformation and Fock matrix formation --------------
+Initializing the integral package          ... done
+Reading one-electron quantities            ... done
+
+------------------------------
+PARTIAL COULOMB TRANSFORMATION
+------------------------------
+
+Transformation type                        ... one-operator
+Dimension of the basis                     ...   46
+Number of internal MOs                     ...   46 (0-45)
+Pair cutoff                                ... 2.500e-11 Eh
+Number of AO pairs included in the trafo   ... 1066
+Total Number of distinct AO pairs          ... 1081
+Memory devoted for trafo                   ...  975.0 MB 
+Max. Number of MO pairs treated together   ... 118219      
+Max. Number of MOs treated per batch       ... 2569      
+Number Format for Storage                  ... Double (8 Byte)
+AO-integral source                         ... DIRECT
+Integral package used                      ... LIBINT
+
+Starting integral evaluation:
+<ss|**>:        10285 b       68 skpd     0.018 s (  0.002 ms/b)
+<sp|**>:        13704 b      100 skpd     0.035 s (  0.003 ms/b)
+<sd|**>:         5840 b       47 skpd     0.028 s (  0.005 ms/b)
+<pp|**>:         5645 b       39 skpd     0.048 s (  0.008 ms/b)
+<pd|**>:         4231 b       32 skpd     0.049 s (  0.012 ms/b)
+<dd|**>:         1215 b        3 skpd     0.026 s (  0.021 ms/b)
+Closing buffer AOJ ( 0.00 GB; CompressionRatio= 2.51)
+Collecting buffer AOJ 
+    ... done with AO integral generation
+Number of MO pairs included in the trafo   ... 1081
+    ... Now sorting integrals
+IBATCH = 1 of  1
+Closing buffer JAO ( 0.01 GB; CompressionRatio= 1.00)
+Collecting buffer JAO 
+TOTAL TIME for half transformation         ...     0.282 sec
+AO-integral generation                     ...     0.107 sec
+Half transformation                        ...     0.096 sec
+J-integral sorting                         ...     0.075 sec
+
+-------------------------- SECOND HALF TRANSFORMATION -------------------------
+Formation of (pq|rs)                           ... 
+ok (     0.081 sec)
+Sorting MO integrals                           ... 
+ok (     0.077 sec)
+Memory used before IPROCI: 4 MB
+-------------------------- Starting IPROCI Calculation ------------------------
+
+----------------------- Initial IPROCI Input Information ----------------------
+
+Number of DOMO orbitals:		 0-14	 ... 15
+Number of SOMO orbitals:		 15-14	 ... 0
+Number of VMO orbitals: 		 15-45	 ... 31
+Reference Energy: -477.73161329
+Initial XPSORB 	 14 	(14-0)
+Initial XPSORB Type	 DOMOType
+Solution Rootwise	 1
+RIJCOSX for expensive terms	 0
+Integral Trafotype	 0
+Number of Roots Asked	 1 
+Number of Roots fixed	 1
+		Beta Root=1, 
+		Alpha Root=0, 
+		Somo Root=0
+
+Multiplicity	 1
+RootType Asked	 0 
+RootType Fixed	 0 
+		(Default(beta)=0, 
+		alpha(except mult=2)=1, 
+		alpha_doublet=2, 
+		somo=3, 
+		All=5(carefull!))
+
+CVS Flag 	OFF
+
+--------------------------- Entering Roottype Solver --------------------------
+
+MXORB Map
+                   0          1          2          3    
+      0         0          0          0          0     
+      1         0          0          0          0     
+      2         0          0          0          0     
+      3         0          0          0          0     
+      4         0          0          0          0     
+      5         0          0          0          0     
+      6         0          0          0          0     
+      7         0          0          0          0     
+      8         0          0          0          0     
+      9         0          0          0          0     
+     10         0          0          0          0     
+     11         0          0          0          0     
+     12         0          0          0          0     
+     13         0          0          0          0     
+     14         1          0          0          0     
+Parallel Run Info: my_id=0, np=1
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+		 RootType Block:	 0 
+		 XOrb Solving:	 14
+------------------------------------------------------------------------
+Excitation classes included: 
+IP_I IP_IJA 
+------------------------------------------------------------------------
+	Roottype 0
+------------------------------------------------------------------------
+		 Rootwise Solution: iroot/NROOT= 1/1, IPRoot=14 
+------------------------------------------------------------------------
+Entering Solve()
+   ... Initialized Buffers
+------------------------
+DAVIDSON-DIAGONALIZATION
+------------------------
+
+Dimension of the eigenvalue problem            ...   6990
+Number of roots to be determined               ...      1
+Maximum size of the expansion space            ...      4
+Maximum number of iterations                   ...     50
+Convergence tolerance for the residual         ...    1.000e-06
+Convergence tolerance for the energies         ...    1.000e-06
+Orthogonality tolerance                        ...    1.000e-14
+Level Shift                                    ...    2.000e-01
+Constructing the preconditioner                ... o.k.
+Building the initial guess                     ... 
+Calculating Preconditioner                     ... o.k.
+
+Guess Rootwise (IPRoot=14)          ... o.k.
+Number of trial vectors determined             ...      1
+
+
+                       ****Iteration    0****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 1
+   lowest eigenvalues of A:
+    E[ 0] =     0.3702620909 (change=   0.3702620909)
+   Lowest Energy          :     0.370262090941
+   Maximum Energy change  :     0.370262090941 (vector 0)
+   Maximum residual norm  :     0.070184932796
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    1****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 2
+   lowest eigenvalues of A:
+    E[ 0] =     0.3363022858 (change=  -0.0339598051)
+   Lowest Energy          :     0.336302285808
+   Maximum Energy change  :     0.033959805132 (vector 0)
+   Maximum residual norm  :     0.006688704411
+   Repeating orthogonalization (< 0| 2>=5.178269e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    2****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 3
+   lowest eigenvalues of A:
+    E[ 0] =     0.3327334835 (change=  -0.0035688023)
+   Lowest Energy          :     0.332733483481
+   Maximum Energy change  :     0.003568802327 (vector 0)
+   Maximum residual norm  :     0.002475236474
+   Repeating orthogonalization (< 0| 3>=8.627423e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    3****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 4
+   lowest eigenvalues of A:
+    E[ 0] =     0.3324701626 (change=  -0.0002633209)
+   Lowest Energy          :     0.332470162629
+   Maximum Energy change  :     0.000263320852 (vector 0)
+   Maximum residual norm  :     0.001941695921
+   Rebuilding the expansion space
+   Repeating orthogonalization (< 0| 1>=4.720742e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    4****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 2
+   lowest eigenvalues of A:
+    E[ 0] =     0.3085269366 (change=  -0.0239432260)
+   Lowest Energy          :     0.308526936637
+   Maximum Energy change  :     0.023943225992 (vector 0)
+   Maximum residual norm  :     0.000198341333
+   Repeating orthogonalization (< 0| 2>=1.422348e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    5****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 3
+   lowest eigenvalues of A:
+    E[ 0] =     0.3084139281 (change=  -0.0001130085)
+   Lowest Energy          :     0.308413928098
+   Maximum Energy change  :     0.000113008539 (vector 0)
+   Maximum residual norm  :     0.000083031067
+   Repeating orthogonalization (< 0| 3>=2.005748e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    6****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 4
+   lowest eigenvalues of A:
+    E[ 0] =     0.3083862707 (change=  -0.0000276574)
+   Lowest Energy          :     0.308386270732
+   Maximum Energy change  :     0.000027657366 (vector 0)
+   Maximum residual norm  :     0.000051006577
+   Rebuilding the expansion space
+   Repeating orthogonalization (< 0| 1>=2.426642e-02)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    7****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 2
+   lowest eigenvalues of A:
+    E[ 0] =     0.3059810000 (change=  -0.0024052708)
+   Lowest Energy          :     0.305980999966
+   Maximum Energy change  :     0.002405270766 (vector 0)
+   Maximum residual norm  :     0.000048015430
+   Repeating orthogonalization (< 0| 2>=8.061979e-02)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    8****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 3
+   lowest eigenvalues of A:
+    E[ 0] =     0.3059567488 (change=  -0.0000242512)
+   Lowest Energy          :     0.305956748770
+   Maximum Energy change  :     0.000024251197 (vector 0)
+   Maximum residual norm  :     0.000006360180
+   Repeating orthogonalization (< 0| 3>=5.165011e-01)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration    9****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 4
+   lowest eigenvalues of A:
+    E[ 0] =     0.3059548438 (change=  -0.0000019050)
+   Lowest Energy          :     0.305954843791
+   Maximum Energy change  :     0.000001904979 (vector 0)
+   Maximum residual norm  :     0.000004814130
+   Rebuilding the expansion space
+   Repeating orthogonalization (< 0| 1>=2.162985e-03)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration   10****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 2
+   lowest eigenvalues of A:
+    E[ 0] =     0.3056399320 (change=  -0.0003149118)
+   Lowest Energy          :     0.305639932005
+   Maximum Energy change  :     0.000314911786 (vector 0)
+   Maximum residual norm  :     0.000002242047
+   Repeating orthogonalization (< 0| 2>=3.013971e-02)
+Storing the current CI vectors                 ... o.k.
+
+                       ****Iteration   11****
+
+Building the sigma vectors                     ... o.k.
+Building the Hamiltonian                       ... o.k.
+Diagonalizing the Hamiltonian                  ... o.k.
+   Size of expansion space: 3
+   lowest eigenvalues of A:
+    E[ 0] =     0.3056387133 (change=  -0.0000012187)
+   Lowest Energy          :     0.305638713302
+   Maximum Energy change  :     0.000001218704 (vector 0)
+   Maximum residual norm  :     0.000000729062
+
+      *** CONVERGENCE OF RESIDUAL NORM REACHED ***
+
+Storing the converged CI vectors               ... 13.ci.tmp
+
+                 *** DAVIDSON DONE ***
+
+========= Root 0, Energy(Eh):   0.30563871, Energy(eV):   8.31685221 =========
+------------------------------ Largest amplitudes -----------------------------
+      6989       IP_I(23):   14 ->   -1      0 ->    0 :   0.97903467
+      6985       IP_I(23):   10 ->   -1      0 ->    0 :  -0.07789757
+      6886     IP_IJA(24):   14 ->   -1     12 ->   19 :  -0.05782778
+      6949     IP_IJA(24):   14 ->   -1     14 ->   20 :  -0.04784598
+      6919     IP_IJA(24):   14 ->   -1     13 ->   21 :  -0.04619540
+
+
+***Iteration converged in 11  ***
+Time Taken:      2.328 sec (=       0.039 min)
+
+Storing converged CI vectors of all the Roots       ... 13.DVD_0.ci
+------------------------------------------------------------------------
+RootType Block:	 0 Completed		 (     2.329 sec)		 (     0.039 min)
+------------------------------------------------------------------------
+NROOTs=1
+	  0       0.305639
+
+
+========= Root 0, Energy(Eh):   0.30563871, Energy(eV):   8.31685221 =========
+------------------------------ Largest amplitudes -----------------------------
+      6989       IP_I(23):   14 ->   -1      0 ->    0 :   0.97903467
+      6985       IP_I(23):   10 ->   -1      0 ->    0 :  -0.07789757
+      6886     IP_IJA(24):   14 ->   -1     12 ->   19 :  -0.05782778
+      6949     IP_IJA(24):   14 ->   -1     14 ->   20 :  -0.04784598
+      6919     IP_IJA(24):   14 ->   -1     13 ->   21 :  -0.04619540
+
+
+
+-------------------
+Excitation energies
+-------------------
+--------------------------------------------------------------------------------
+    ROOT    Mult      Excitation energy[Eh]           [cm-1]          [eV]
+--------------------------------------------------------------------------------
+     0       1            0.30563871                  67079.94          8.317
+
+Calculating transition densities (NRoots=1) ...      done.
+
+Updating Single point Energy... (IPRoot=0)
+SCF Energy =  -477.73161329 
+Selected Root= 0: Energy =     0.30563871 
+Total Energy (SCF+IP(0)) =  -477.42597458
+
+------------------------------------------------------------------------
+Convergence Information
+Root 0:	11
+
+------------------------------------------------------------------------
+Energy Summary (in eV):
+------------------------------------------------------------------------
+                   0          1          2          3    
+      0       0.000000   0.000000   0.000000   0.000000
+      1       0.000000   0.000000   0.000000   0.000000
+      2       0.000000   0.000000   0.000000   0.000000
+      3       0.000000   0.000000   0.000000   0.000000
+      4       0.000000   0.000000   0.000000   0.000000
+      5       0.000000   0.000000   0.000000   0.000000
+      6       0.000000   0.000000   0.000000   0.000000
+      7       0.000000   0.000000   0.000000   0.000000
+      8       0.000000   0.000000   0.000000   0.000000
+      9       0.000000   0.000000   0.000000   0.000000
+     10       0.000000   0.000000   0.000000   0.000000
+     11       0.000000   0.000000   0.000000   0.000000
+     12       0.000000   0.000000   0.000000   0.000000
+     13       0.000000   0.000000   0.000000   0.000000
+     14       8.316852   0.000000   0.000000   0.000000
+
+------------------------------------------------------------------------
+
+Max memory consumption by driver: 57 MB
